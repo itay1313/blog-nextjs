@@ -23,7 +23,19 @@ module.exports = {
           800: 'rgb(var(--tw-color-primary-800) / <alpha-value>)',
           900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
         },
-        dark: '#222222',
+        dark: '#3b3b47',
+        light: '#ffffff',
+        'top-bar': 'var(--top-bar)',
+        purple: 'var(--purple)',
+        'light-purple': 'var(--light-purple)',
+      },
+      spacing: {
+        7: '1.75rem',
+        9: '2.25rem',
+        11: '2.75rem',
+        13: '3.25rem',
+        14: '3.5rem',
+        15: '3.75rem',
       },
       keyframes: {
         flicker: {

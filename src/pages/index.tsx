@@ -7,6 +7,7 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
+import CloseIcon from '~/svg/CloseIcon.svg';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -26,9 +27,29 @@ export default function HomePage() {
       <Seo templateTitle='Home' />
 
       <main>
+        <section className='alert-bar fixed top-0 left-0 right-0 bg-top-bar text-light'>
+          <div className='relative flex flex-wrap items-center justify-center space-x-5 py-4'>
+            <p>
+              Blog: Extending our Series B - Itay raises additional $55m Read
+            </p>
+            <UnderlineLink href='/contact'>Read blog</UnderlineLink>
+            <div>
+              <CloseIcon className='absolute right-0 top-2/4 mr-4 -translate-y-2/4' />
+            </div>
+          </div>
+        </section>
         <section className='bg-white'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
             <Vercel className='text-5xl' />
+            <header>
+              <h1 className='text-4xl font-bold'>Next.js Starter</h1>
+              <nav className='flex space-x-2'>
+                <ButtonLink href='/about'>About</ButtonLink>
+                <ArrowLink href='/about'>About</ArrowLink>
+                <UnderlineLink href='/about'>About</UnderlineLink>
+                <UnstyledLink href='/about'>About</UnstyledLink>
+              </nav>
+            </header>
             <h1 className='mt-4'>
               Next.js + Tailwind CSS + TypeScript Starter
             </h1>
