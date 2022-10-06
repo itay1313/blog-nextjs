@@ -1,11 +1,16 @@
 import * as React from 'react';
 
+import Header from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
+import BlogSection from '@/components/sections/BlogSection';
+import FormSection from '@/components/sections/FormSection';
 import HeaderSection from '@/components/sections/HeaderSection';
+import HeroSection from '@/components/sections/HeroSection';
+import LatestPosts from '@/components/sections/LatestPosts';
 import TopBar from '@/components/sections/TopBar';
 import Seo from '@/components/Seo';
 
@@ -29,7 +34,12 @@ export default function HomePage() {
 
       <main>
         <TopBar />
+        <Header />
         <HeaderSection />
+        <HeroSection />
+        <LatestPosts />
+        <FormSection />
+        <BlogSection />
         <section className='bg-white'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
             <Vercel className='text-5xl' />
