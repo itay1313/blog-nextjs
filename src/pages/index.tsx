@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
@@ -31,11 +31,9 @@ export default function HomePage() {
   return (
     <Layout>
       <Seo templateTitle='Home' />
-
+      <TopBar />
+      <HeaderSection />
       <main>
-        <TopBar />
-        <Header />
-        <HeaderSection />
         <HeroSection />
         <LatestPosts />
         <FormSection />
@@ -52,9 +50,6 @@ export default function HomePage() {
                 <UnstyledLink href='/about'>About</UnstyledLink>
               </nav>
             </header>
-            <h1 className='mt-4'>
-              Next.js + Tailwind CSS + TypeScript Starter
-            </h1>
             <p className='mt-2 text-sm text-gray-800'>
               A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
               Import, Seo, Link component, pre-configured with Husky{' '}
@@ -81,16 +76,10 @@ export default function HomePage() {
                 alt='Deploy with Vercel'
               />
             </UnstyledLink>
-
-            <footer className='absolute bottom-2 text-gray-700'>
-              © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
-                Theodorus Clarence
-              </UnderlineLink>
-            </footer>
           </div>
         </section>
       </main>
+      <Footer />
     </Layout>
   );
 }
