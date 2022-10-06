@@ -5,9 +5,10 @@ import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
+import HeaderSection from '@/components/sections/HeaderSection';
+import TopBar from '@/components/sections/TopBar';
 import Seo from '@/components/Seo';
 
-import CloseIcon from '~/svg/CloseIcon.svg';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -27,17 +28,8 @@ export default function HomePage() {
       <Seo templateTitle='Home' />
 
       <main>
-        <section className='alert-bar fixed top-0 left-0 right-0 bg-top-bar text-light'>
-          <div className='relative flex flex-wrap items-center justify-center space-x-5 py-4'>
-            <p>
-              Blog: Extending our Series B - Itay raises additional $55m Read
-            </p>
-            <UnderlineLink href='/contact'>Read blog</UnderlineLink>
-            <div>
-              <CloseIcon className='absolute right-0 top-2/4 mr-4 -translate-y-2/4' />
-            </div>
-          </div>
-        </section>
+        <TopBar />
+        <HeaderSection />
         <section className='bg-white'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
             <Vercel className='text-5xl' />

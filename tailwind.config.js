@@ -9,6 +9,25 @@ module.exports = {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
+      screens: {
+        'for-mobile': { max: '767px' },
+        // => @media (max-width: 767px) { ... }
+
+        sm: '640px',
+        // => @media (min-width: 640px) { ... }
+
+        md: '768px',
+        // => @media (min-width: 768px) { ... }
+
+        lg: '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        xl: '1280px',
+        // => @media (min-width: 1280px) { ... }
+
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
       colors: {
         primary: {
           // Customize it on globals.css :root
@@ -28,6 +47,7 @@ module.exports = {
         'top-bar': 'var(--top-bar)',
         purple: 'var(--purple)',
         'light-purple': 'var(--light-purple)',
+        'header-background': 'var(--header-background)',
       },
       spacing: {
         7: '1.75rem',
