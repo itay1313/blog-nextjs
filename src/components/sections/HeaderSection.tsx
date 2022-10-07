@@ -25,11 +25,11 @@ export default function HeaderSection() {
   return (
     <header className='bg-header-background py-32'>
       {/* top menu */}
-      <div className='top-menu layout align-center flex justify-between bg-white'>
+      <div className='top-menu-wrapper layout align-center flex justify-between bg-white'>
         <div className='logo align-center flex'>
           <Vercel />
         </div>
-        <nav className='menu for-mobile:hidden'>
+        <nav className='top-menu for-mobile:hidden'>
           <ul className='flex items-center justify-between space-x-4'>
             {topmenulinks.map(({ href, label }) => (
               <li key={`${href}${label}`}>
@@ -56,7 +56,7 @@ export default function HeaderSection() {
       </div>
 
       {/* bottom menu */}
-      <div className='main-menu layout align-center flex justify-between py-32'>
+      <div className='main-menu-wrapper layout align-center flex justify-between py-32'>
         <div className='logo'>
           <h1 className='mt-4'>Blog</h1>
         </div>

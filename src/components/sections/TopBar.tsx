@@ -9,7 +9,7 @@ export default function TopBar() {
   return (
     <section className='alert-bar sticky top-0 z-50 bg-top-bar text-light'>
       {show && (
-        <div className='relative flex flex-wrap items-center justify-center space-x-5 py-4'>
+        <div className='relative flex flex-wrap items-center justify-center space-x-5 py-4 text-sm'>
           <p>Blog: Extending our Series B - Itay raises additional $55m</p>
           <UnderlineLink href='/contact'>Read blog</UnderlineLink>
           <div>
