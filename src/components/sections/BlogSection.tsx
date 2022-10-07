@@ -58,7 +58,7 @@ export default function BlogSection() {
   return (
     <section className=''>
       {/* top menu */}
-      <div className='main-menu layout align-center flex flex-col justify-between py-32'>
+      <div className='main-menu layout align-center flex flex-col justify-between py-24'>
         <ul className='grid gap-6 sm:grid-cols-2  md:grid-cols-3'>
           {latestPostsData.map(({ href, postTitle, postSubtitle, imgSrc }) => (
             <li key={`${href}${postTitle}`} className='w-full flex-grow'>

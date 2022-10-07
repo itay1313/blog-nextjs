@@ -56,6 +56,7 @@ module.exports = {
         purple: 'var(--purple)',
         'light-purple': 'var(--light-purple)',
         'header-background': 'var(--header-background)',
+        'footer-background': 'var(--footer-background)',
       },
       spacing: {
         7: '1.75rem',

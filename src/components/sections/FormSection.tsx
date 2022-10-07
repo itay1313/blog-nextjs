@@ -4,10 +4,10 @@ import FormImg from '~/svg/FormImg.svg';
 
 export default function FormSection() {
   return (
-    <section className='hero py-24'>
-      <div className='layout flex items-center justify-center rounded-md bg-purple shadow'>
+    <section className='form-wrapper'>
+      <div className='layout flex items-center justify-center rounded-3xl bg-purple p-16 shadow'>
         <div className='flex basis-2/3 flex-col'>
-          <h2 className='text-5xl font-bold'>
+          <h2 className='text-5xl font-bold text-light'>
             World class ideas
             <br></br>
             <em>right in your inbox</em>

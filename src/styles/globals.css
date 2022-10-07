@@ -4,7 +4,6 @@
 
 :root {
   /* #region  /**=========== Primary Color =========== */
-  /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
   --tw-color-primary-50: 245 243 255;
   --tw-color-primary-100: 237 233 254;
   --tw-color-primary-200: 221 214 254;
@@ -39,16 +38,16 @@
   --purple: #8578e6;
   --light-purple: #f2f1fd;
   --header-background: #f8f4f0;
+  --footer-background: #32313b;
   /* #endregion  /**======== Primary Color =========== */
 }
 
 .dark {
-  --top-bg: #8578e6;
-  /* #8b5cf6 */
+  --top-bar: #3b3b47;
   --purple: #8578e6;
-  /* #8b5cf6 */
-  --light-purple: #8578e6;
-  /* #8b5cf6 */
+  --light-purple: #f2f1fd;
+  --header-background: #32313b;
+  --footer-background: #f8f4f0;
 }
 
 @layer base {
@@ -141,4 +140,8 @@
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
   }
+}
+
+img {
+  border-radius: 1.5rem;
 }

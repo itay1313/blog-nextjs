@@ -23,7 +23,7 @@ const mainmenulinks = [
 
 export default function HeaderSection() {
   return (
-    <header className='bg-header-background py-32'>
+    <header className='bg-header-background py-20'>
       {/* top menu */}
       <div className='top-menu-wrapper layout align-center flex justify-between bg-white'>
         <div className='logo align-center flex'>
@@ -56,7 +56,7 @@ export default function HeaderSection() {
       </div>
 
       {/* bottom menu */}
-      <div className='main-menu-wrapper layout align-center flex justify-between py-32'>
+      <div className='main-menu-wrapper layout align-center mt-2 flex justify-between pt-20'>
         <div className='logo'>
           <h1 className='mt-4'>Blog</h1>
         </div>

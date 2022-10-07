@@ -2,6 +2,10 @@ import * as React from 'react';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
 
+import CodepenIcon from '~/svg/CodepenIcon.svg';
+import LinkedinIcon from '~/svg/LinkedinIcon.svg';
+import TwitterIcon from '~/svg/TwitterIcon.svg';
+
 const links = [
   { href: '/', label: 'Route 1' },
   { href: '/', label: 'Route 2' },
@@ -9,9 +13,9 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className='p-10'>
-      <div className='rounded-3xl bg-black p-20 text-lm text-light'>
-        <div className='layout flex justify-between sm:flex-col md:flex-row'>
+    <footer className='p-10 pt-0'>
+      <div className='rounded-3xl bg-footer-background p-20 text-lm text-light'>
+        <section className='layout flex justify-between sm:flex-col md:flex-row'>
           <UnstyledLink
             href='/'
             className='font-bold hover:text-gray-600 md:basis-3/12'
@@ -76,7 +80,15 @@ export default function Footer() {
               </nav>
             </div>
           </div>
-        </div>
+        </section>
+        <section className='layout mt-12 flex justify-between border-t border-light py-12 sm:flex-col md:flex-row'>
+          <p>© Tines | RSS: Blog • Product updates • Story library</p>
+          <div className='flex gap-4'>
+            <TwitterIcon />
+            <CodepenIcon />
+            <LinkedinIcon />
+          </div>
+        </section>
       </div>
     </footer>
   );
