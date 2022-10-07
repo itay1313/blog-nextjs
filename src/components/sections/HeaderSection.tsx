@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
 
@@ -117,6 +117,12 @@ export default function HeaderSection() {
             <line x1='5' y1='18' x2='19' y2='18'></line>
           </svg>
         </button>
+        {/* <Button
+                onClick={toggleMode}
+                variant={mode === 'dark' ? 'light' : 'dark'}
+              >
+                Set to {mode === 'dark' ? 'light' : 'dark'}
+              </Button> */}
       </div>
     </header>
   );

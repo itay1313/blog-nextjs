@@ -1,5 +1,7 @@
+import clsx from 'clsx';
 import * as React from 'react';
 
+import Button from '@/components/buttons/Button';
 import Footer from '@/components/layout/Footer';
 import Layout from '@/components/layout/Layout';
 import BlogSection from '@/components/sections/BlogSection';
@@ -18,23 +20,32 @@ import Seo from '@/components/Seo';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
-
 export default function HomePage() {
+  const [mode, setMode] = React.useState<'dark' | 'light'>('light');
+  function toggleMode() {
+    return mode === 'dark' ? setMode('light') : setMode('dark');
+  }
   return (
     <Layout>
-      <Seo templateTitle='Home' />
-      <TopBar />
-      <HeaderSection />
-      <main>
-        <HeroSection />
-        <LatestPosts />
-        <FormSection />
-        <BlogSection />
-      </main>
-      <Footer />
+      <div className={clsx(mode === 'dark' && 'dark')}>
+        <Seo templateTitle='Home' />
+        <TopBar />
+        <HeaderSection />
+        <main>
+          <HeroSection />
+          <LatestPosts />
+          <FormSection />
+          <BlogSection />
+        </main>
+        <Footer />
+        <Button
+          className='fixed bottom-10 right-10'
+          onClick={toggleMode}
+          variant={mode === 'dark' ? 'light' : 'dark'}
+        >
+          Set to {mode === 'dark' ? 'light' : 'dark'}
+        </Button>
+      </div>
     </Layout>
   );
 }
