@@ -3,7 +3,6 @@ import React from 'react';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import NextImage from '@/components/NextImage';
 
-import Vercel from '~/svg/Vercel.svg';
 export default function HeroSection() {
   return (
     <section className='hero py-24'>
@@ -20,7 +19,6 @@ export default function HeroSection() {
           </p>
         </div>
         <div className='flex basis-2/3 flex-col'>
-          <Vercel />
           <NextImage
             useSkeleton
             className='w-full rounded-xl md:w-full'
