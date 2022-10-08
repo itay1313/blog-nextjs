@@ -1,0 +1,15 @@
+ <svg
+                  className='SearchIcon'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                >
+                  <path
+                    d='M19.2307 19.2307L15.4845 15.4845L19.2307 19.2307ZM4.74525 10.989C4.74525 7.53246 7.53246 4.74525 10.989 4.74525C14.4355 4.74525 17.2327 7.53246 17.2327 10.989C17.2327 14.4355 14.4355 17.2327 10.989 17.2327C7.53246 17.2327 4.74525 14.4355 4.74525 10.989Z'
+                    stroke='currentColor'
+                    stroke-width='1.4985'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  ></path>
+                </svg>
