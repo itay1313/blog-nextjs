@@ -1,8 +1,9 @@
 import * as React from 'react';
 
+import Button from '@/components/buttons/Button';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
-import Vercel from '~/svg/Vercel.svg';
+import Logo from '~/svg/Logo.svg';
 
 const topmenulinks = [
   { href: '/', label: 'Product' },
@@ -25,21 +26,26 @@ export default function HeaderSection() {
   return (
     <header className='bg-header-background py-20'>
       {/* top menu */}
-      <div className='top-menu-wrapper layout align-center flex justify-between bg-white'>
-        <div className='logo align-center flex'>
-          <Vercel />
+      <div className='top-menu-wrapper layout flex items-center justify-between rounded-3xl bg-white py-4 px-6'>
+        <div className='logo flex items-center'>
+          <a href='https://itaycode.com' target='_blank' rel='noreferrer'>
+            <Logo width='103' height='32' />
+          </a>
         </div>
-        <nav className='top-menu for-mobile:hidden'>
-          <ul className='flex items-center justify-between space-x-4'>
-            {topmenulinks.map(({ href, label }) => (
-              <li key={`${href}${label}`}>
-                <UnstyledLink href={href} className='hover:text-gray-600'>
-                  {label}
-                </UnstyledLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className='flex items-center'>
+          <nav className='top-menu for-mobile:hidden'>
+            <ul className='flex items-center justify-between space-x-4 text-lm'>
+              {topmenulinks.map(({ href, label }) => (
+                <li key={`${href}${label}`}>
+                  <UnstyledLink href={href} className='hover:text-gray-600'>
+                    {label}
+                  </UnstyledLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <Button className='ml-4'>Sign up for free</Button>
+        </div>
         <button className='menu md:hidden' title='Open Site Menu'>
           <svg
             width='24'
@@ -56,12 +62,12 @@ export default function HeaderSection() {
       </div>
 
       {/* bottom menu */}
-      <div className='main-menu-wrapper layout align-center mt-2 flex justify-between pt-20'>
+      <div className='main-menu-wrapper layout mt-2 flex items-center justify-between pt-20'>
         <div className='logo'>
           <h1 className='mt-4'>Blog</h1>
         </div>
-        <div className='mainmenu align-center flex rounded-2xl bg-white px-3 for-mobile:hidden'>
-          <nav className='align-center flex py-6 px-3'>
+        <div className='mainmenu flex items-center rounded-2xl bg-white px-3 for-mobile:hidden'>
+          <nav className='flex items-center py-6 px-3'>
             <ul className='flex items-center justify-between space-x-4'>
               {mainmenulinks.map(({ href, label }) => (
                 <li key={`${href}${label}`}>
@@ -72,8 +78,8 @@ export default function HeaderSection() {
               ))}
             </ul>
           </nav>
-          <div className='align-center flex'>
-            <div className='align-center relative my-auto flex rounded-md shadow-sm'>
+          <div className='flex items-center'>
+            <div className='relative my-auto flex items-center rounded-md shadow-sm'>
               <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
                 <svg
                   className='SearchIcon'
@@ -95,7 +101,7 @@ export default function HeaderSection() {
                 type='text'
                 name='price'
                 id='price'
-                className='block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
+                className='block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500'
                 placeholder='0.00'
               />
               <div className='absolute inset-y-0 right-0 flex items-center'>
@@ -117,12 +123,6 @@ export default function HeaderSection() {
             <line x1='5' y1='18' x2='19' y2='18'></line>
           </svg>
         </button>
-        {/* <Button
-                onClick={toggleMode}
-                variant={mode === 'dark' ? 'light' : 'dark'}
-              >
-                Set to {mode === 'dark' ? 'light' : 'dark'}
-              </Button> */}
       </div>
     </header>
   );

@@ -34,7 +34,7 @@ export default function LatestPosts() {
   return (
     <section className=''>
       {/* top menu */}
-      <div className='main-menu layout align-center flex flex-col justify-between pb-24'>
+      <div className='main-menu layout flex flex-col items-center justify-between pb-24'>
         <h3>Latest Posts</h3>
         <ul className='grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
           {latestPostsData.map(({ href, postTitle, postSubtitle, imgSrc }) => (

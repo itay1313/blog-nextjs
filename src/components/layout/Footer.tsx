@@ -4,6 +4,7 @@ import UnstyledLink from '@/components/links/UnstyledLink';
 
 import CodepenIcon from '~/svg/CodepenIcon.svg';
 import LinkedinIcon from '~/svg/LinkedinIcon.svg';
+import Logow from '~/svg/Logow.svg';
 import TwitterIcon from '~/svg/TwitterIcon.svg';
 
 const links = [
@@ -16,12 +17,7 @@ export default function Footer() {
     <footer className='p-10 pt-0'>
       <div className='rounded-3xl bg-footer-background p-20 text-lm text-light'>
         <section className='layout flex justify-between sm:flex-col md:flex-row'>
-          <UnstyledLink
-            href='/'
-            className='font-bold hover:text-gray-600 md:basis-3/12'
-          >
-            Home
-          </UnstyledLink>
+          <Logow width='122.3125' height='38' />
           <div className='flex justify-between md:basis-9/12'>
             <div className='flex flex-col'>
               <h3 className='mb-6 text-lm'>fdsfd</h3>
