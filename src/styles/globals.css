@@ -40,6 +40,7 @@
   --dark-purple: #665dac;
   --header-background: #f8f4f0;
   --footer-background: #32313b;
+  --footer-title: #b0a6f9;
   --dark: #32313b;
   --light: #fff;
   /* #endregion  /**======== Primary Color =========== */
@@ -52,6 +53,7 @@
   --dark-purple: #665dac;
   --header-background: #26262c;
   --footer-background: #f8f4f0;
+  --footer-title: var(--color-primary-900);
   --dark: #fff;
   --light: #32313b;
 }
@@ -118,7 +120,7 @@
 
   h3,
   .h3 {
-    @apply text-lg text-2xl font-bold md:font-primary;
+    @apply text-lg text-lg font-bold md:font-primary;
   }
 
   h4,
@@ -128,11 +130,19 @@
 
   body,
   .p {
-    @apply text-sm text-base md:font-primary;
+    @apply text-sm text-base leading-[1.4] md:font-primary;
   }
 
   .menu-style {
     @apply flex items-center justify-between gap-6 text-lm font-medium;
+  }
+
+  .post-title {
+    @apply mt-5 mb-2 text-2xl font-semibold leading-[1.2];
+  }
+
+  .footer-menu-title {
+    @apply mb-6 text-sm font-bold uppercase text-footer-title;
   }
 
   /* #endregion  /**======== Typography =========== */

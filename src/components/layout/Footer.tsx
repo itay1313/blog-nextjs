@@ -20,12 +20,15 @@ export default function Footer() {
           <Logow width='122.3125' height='38' />
           <div className='flex justify-between md:basis-9/12'>
             <div className='flex flex-col'>
-              <h3 className='mb-6 text-lm'>fdsfd</h3>
+              <h3 className='footer-menu-title'>PRODUCT</h3>
               <nav>
                 <ul className='flex flex-col items-center justify-between space-y-4'>
                   {links.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
-                      <UnstyledLink href={href} className='hover:text-gray-600'>
+                      <UnstyledLink
+                        href={href}
+                        className='hover:text-primary-500'
+                      >
                         {label}
                       </UnstyledLink>
                     </li>
@@ -34,12 +37,15 @@ export default function Footer() {
               </nav>
             </div>
             <div className='flex flex-col'>
-              <h3 className='mb-6 text-lm'>fdsfd</h3>
+              <h3 className='footer-menu-title'>USE CASES</h3>
               <nav>
                 <ul className='flex flex-col items-center justify-between space-y-4'>
                   {links.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
-                      <UnstyledLink href={href} className='hover:text-gray-600'>
+                      <UnstyledLink
+                        href={href}
+                        className='hover:text-primary-500'
+                      >
                         {label}
                       </UnstyledLink>
                     </li>
@@ -48,12 +54,15 @@ export default function Footer() {
               </nav>
             </div>
             <div className='flex flex-col'>
-              <h3 className='mb-6 text-lm'>fdsfd</h3>
+              <h3 className='footer-menu-title'>RESOURCES</h3>
               <nav>
                 <ul className='flex flex-col items-center justify-between space-y-4'>
                   {links.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
-                      <UnstyledLink href={href} className='hover:text-gray-600'>
+                      <UnstyledLink
+                        href={href}
+                        className='hover:text-primary-500'
+                      >
                         {label}
                       </UnstyledLink>
                     </li>
@@ -62,12 +71,15 @@ export default function Footer() {
               </nav>
             </div>
             <div className='flex flex-col'>
-              <h3 className='mb-6 text-lm'>fdsfd</h3>
+              <h3 className='footer-menu-title'>COMPANY</h3>
               <nav>
                 <ul className='flex flex-col items-center justify-between space-y-4'>
                   {links.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
-                      <UnstyledLink href={href} className='hover:text-gray-600'>
+                      <UnstyledLink
+                        href={href}
+                        className='hover:text-primary-500'
+                      >
                         {label}
                       </UnstyledLink>
                     </li>

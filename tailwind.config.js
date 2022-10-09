@@ -69,8 +69,10 @@ module.exports = {
         'top-bar': 'var(--top-bar)',
         purple: 'var(--purple)',
         'light-purple': 'var(--light-purple)',
+        'dark-purple': 'var(--dark-purple)',
         'header-background': 'var(--header-background)',
         'footer-background': 'var(--footer-background)',
+        'footer-title': 'var(--footer-title)',
       },
       spacing: {
         7: '1.75rem',

@@ -7,9 +7,9 @@ export default function HeroSection() {
   return (
     <section className='hero py-24'>
       <div className='layout flex justify-between'>
-        <div className='flex basis-1/3 flex-col items-start'>
+        <div className='flex basis-1/3 flex-col items-start md:pr-6'>
           <strong
-            className='tag mb-2 flex rounded-xl bg-light-purple py-1 px-3 text-purple'
+            className='tag mb-2 flex rounded-xl bg-light-purple py-1 px-3 font-semibold text-dark-purple'
             style={{ fontSize: '15.3px' }}
           >
             FEATURED

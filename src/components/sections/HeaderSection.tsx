@@ -29,7 +29,7 @@ export default function HeaderSection() {
   return (
     <header className='bg-header-background pt-20 pb-24'>
       {/* top menu */}
-      <div className='top-menu-wrapper layout flex items-center justify-between rounded-3xl bg-light py-4 px-4'>
+      <div className='top-menu-wrapper layout flex items-center justify-between rounded-3xl bg-light py-4 px-[1.125rem]'>
         <div className='logo flex items-center pl-2'>
           <a href='https://itaycode.com' target='_blank' rel='noreferrer'>
             <Logo width='103' height='32' />
@@ -55,7 +55,7 @@ export default function HeaderSection() {
               ))}
             </ul>
           </nav>
-          <Button className='ml-7'>Sign up for free</Button>
+          <Button className='ml-7 min-h-[3rem]'>Sign up for free</Button>
         </div>
         <button className='menu md:hidden' title='Open Site Menu'>
           <HamburgerIcon />
@@ -68,21 +68,18 @@ export default function HeaderSection() {
           <h1 className='text-xxl font-semibold'>Blog</h1>
         </div>
         <div className='mainmenu flex items-center rounded-2xl bg-light py-[0.6rem] pr-3 for-mobile:hidden'>
-          <nav className='flex items-center px-3'>
-            <ul className='menu-style'>
+          <nav className='flex items-center px-2'>
+            <ul className='menu-style gap-0'>
               {mainmenulinks.map(({ href, label }) => (
                 <li
                   key={`${href}${label}`}
-                  className={
+                  className={`mx-1 rounded-lg p-2 leading-[1.15] hover:bg-primary-100 ${
                     label == 'All'
-                      ? '-mr-2 rounded-lg bg-light-purple p-2 text-primary-500'
+                      ? 'rounded-lg bg-light-purple p-2 text-primary-500 hover:bg-light'
                       : ''
-                  }
+                  }`}
                 >
-                  <UnstyledLink
-                    href={href}
-                    className='flex items-center gap-1 hover:text-primary-500'
-                  >
+                  <UnstyledLink href={href} className='flex items-center gap-1'>
                     {label}
                   </UnstyledLink>
                 </li>
@@ -91,7 +88,7 @@ export default function HeaderSection() {
           </nav>
           <div className='flex items-center'>
             <div className='relative my-auto flex items-center rounded-md shadow-sm'>
-              <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
+              <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4'>
                 <SearchIcon width='24' height='24' />
               </div>
               <input
@@ -100,18 +97,19 @@ export default function HeaderSection() {
                 type='text'
                 name='price'
                 id='price'
-                className='block w-full rounded-md border-2 border-gray-300 border-transparent pl-7 pr-12 hover:border-2 hover:border-primary-500  focus:border-indigo-500 focus:ring-indigo-500'
+                className='block w-full rounded-md border-2 border-gray-300 border-transparent pl-7 pr-12 placeholder:text-dark placeholder:opacity-[0.6] hover:border-2 hover:border-primary-500    focus:border-indigo-500 focus:ring-indigo-500'
                 style={{
                   backgroundColor: 'hsla(33,27%,92%,.4)',
-                  borderRadius: '1rem',
+                  borderRadius: '0.75rem',
                   height: '3rem',
-                  width: '12rem',
+                  width: '11.875rem',
+                  textIndent: '1.4375rem',
                 }}
                 placeholder='Search'
               />
               <div className='absolute inset-y-0 right-0 flex items-center'>
                 <kbd
-                  className='k1a5kt68 mr-3'
+                  className='k1a5kt68 mr-2 font-primary'
                   style={{
                     backgroundColor: '#f0ebe5',
                     borderRadius: '0.4rem',
