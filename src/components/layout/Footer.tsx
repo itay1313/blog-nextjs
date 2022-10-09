@@ -7,7 +7,21 @@ import LinkedinIcon from '~/svg/LinkedinIcon.svg';
 import Logow from '~/svg/Logow.svg';
 import TwitterIcon from '~/svg/TwitterIcon.svg';
 
-const links = [
+const productLinks = [
+  { href: '/', label: 'How it works' },
+  { href: '/', label: 'Use cases' },
+  { href: '/', label: 'For MSSPs' },
+  { href: '/', label: 'Pricing' },
+];
+const casesLinks = [
+  { href: '/', label: 'Route 1' },
+  { href: '/', label: 'Route 2' },
+];
+const resourcesLinks = [
+  { href: '/', label: 'Route 1' },
+  { href: '/', label: 'Route 2' },
+];
+const companyLinks = [
   { href: '/', label: 'Route 1' },
   { href: '/', label: 'Route 2' },
 ];
@@ -23,7 +37,7 @@ export default function Footer() {
               <h3 className='footer-menu-title'>PRODUCT</h3>
               <nav>
                 <ul className='flex flex-col items-center justify-between space-y-4'>
-                  {links.map(({ href, label }) => (
+                  {productLinks.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
                       <UnstyledLink
                         href={href}
@@ -40,7 +54,7 @@ export default function Footer() {
               <h3 className='footer-menu-title'>USE CASES</h3>
               <nav>
                 <ul className='flex flex-col items-center justify-between space-y-4'>
-                  {links.map(({ href, label }) => (
+                  {casesLinks.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
                       <UnstyledLink
                         href={href}
@@ -57,7 +71,7 @@ export default function Footer() {
               <h3 className='footer-menu-title'>RESOURCES</h3>
               <nav>
                 <ul className='flex flex-col items-center justify-between space-y-4'>
-                  {links.map(({ href, label }) => (
+                  {resourcesLinks.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
                       <UnstyledLink
                         href={href}
@@ -74,7 +88,7 @@ export default function Footer() {
               <h3 className='footer-menu-title'>COMPANY</h3>
               <nav>
                 <ul className='flex flex-col items-center justify-between space-y-4'>
-                  {links.map(({ href, label }) => (
+                  {companyLinks.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
                       <UnstyledLink
                         href={href}
