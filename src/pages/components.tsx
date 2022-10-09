@@ -72,7 +72,7 @@ export default function ComponentsPage() {
                       'block max-w-xs rounded',
                       mode === 'dark'
                         ? 'border border-gray-600 bg-dark'
-                        : 'border-gray-300 bg-white',
+                        : 'border-gray-300 bg-light',
                       'focus:border-primary-400 focus:outline-none focus:ring focus:ring-primary-400'
                     )}
                     onChange={(e) => setColor(e.target.value as Color)}

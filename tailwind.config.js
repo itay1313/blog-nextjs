@@ -7,7 +7,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Roobert', ...fontFamily.sans],
+        primary: ['Roobert TRIAL', ...fontFamily.sans],
+      },
+      fontWeight: {
+        hairline: 100,
+        'extra-light': 100,
+        thin: 200,
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+        'extra-bold': 800,
+        black: 900,
       },
       fontSize: {
         xs: ['12px', '16px'],
@@ -16,6 +29,7 @@ module.exports = {
         base: ['18px', '28px'],
         lg: ['20px', '28px'],
         xl: ['24px', '32px'],
+        xxl: ['52px', '58px'],
       },
       screens: {
         'for-mobile': { max: '767px' },
@@ -50,8 +64,8 @@ module.exports = {
           800: 'rgb(var(--tw-color-primary-800) / <alpha-value>)',
           900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
         },
-        dark: '#3b3b47',
-        light: '#ffffff',
+        dark: 'var(--dark)',
+        light: 'var(--light)',
         'top-bar': 'var(--top-bar)',
         purple: 'var(--purple)',
         'light-purple': 'var(--light-purple)',

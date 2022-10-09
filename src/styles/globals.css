@@ -4,62 +4,97 @@
 
 :root {
   /* #region  /**=========== Primary Color =========== */
-  --tw-color-primary-50: 245 243 255;
-  --tw-color-primary-100: 237 233 254;
-  --tw-color-primary-200: 221 214 254;
-  --tw-color-primary-300: 196 181 253;
-  --tw-color-primary-400: 167 139 250;
-  --tw-color-primary-500: 139 92 246;
-  --tw-color-primary-600: 124 58 237;
-  --tw-color-primary-700: 109 40 217;
-  --tw-color-primary-800: 91 33 182;
-  --tw-color-primary-900: 76 29 149;
+  --tw-color-primary-50: 249 248 254;
+  --tw-color-primary-100: 243 242 253;
+  --tw-color-primary-200: 225 221 249;
+  --tw-color-primary-300: 206 201 245;
+  --tw-color-primary-400: 170 161 238;
+  --tw-color-primary-500: 133 120 230;
+  --tw-color-primary-600: 120 108 207;
+  --tw-color-primary-700: 100 90 173;
+  --tw-color-primary-800: 80 72 138;
+  --tw-color-primary-900: 65 59 113;
   --color-primary-50: rgb(var(--tw-color-primary-50));
-  /* #f5f3ff */
+  /* #f9f8fe */
   --color-primary-100: rgb(var(--tw-color-primary-100));
-  /* #ede9fe */
+  /* #f3f2fd */
   --color-primary-200: rgb(var(--tw-color-primary-200));
-  /* #ddd6fe */
+  /* #e1ddf9 */
   --color-primary-300: rgb(var(--tw-color-primary-300));
-  /* #c4b5fd */
+  /* #cec9f5 */
   --color-primary-400: rgb(var(--tw-color-primary-400));
-  /* #a78bfa */
+  /* #aaa1ee */
   --color-primary-500: rgb(var(--tw-color-primary-500));
-  /* #8b5cf6 */
+  /* #8578e6 */
   --color-primary-600: rgb(var(--tw-color-primary-600));
-  /* #7c3aed */
+  /* #786ccf */
   --color-primary-700: rgb(var(--tw-color-primary-700));
-  /* #6d28d9 */
+  /* #645aad */
   --color-primary-800: rgb(var(--tw-color-primary-800));
-  /* #5b21b6 */
+  /* #50488a */
   --color-primary-900: rgb(var(--tw-color-primary-900));
-  /* #4c1d95 */
+  /* #413b71 */
   --top-bar: #3b3b47;
   --purple: #8578e6;
   --light-purple: #f2f1fd;
+  --dark-purple: #665dac;
   --header-background: #f8f4f0;
   --footer-background: #32313b;
+  --dark: #32313b;
+  --light: #fff;
   /* #endregion  /**======== Primary Color =========== */
 }
 
 .dark {
-  --top-bar: #3b3b47;
+  --top-bar: #f8f4f0;
   --purple: #8578e6;
   --light-purple: #f2f1fd;
-  --header-background: #32313b;
+  --dark-purple: #665dac;
+  --header-background: #26262c;
   --footer-background: #f8f4f0;
+  --dark: #fff;
+  --light: #32313b;
 }
 
 @layer base {
   @font-face {
-    font-family: 'Roobert';
-    font-style: normal;
-    font-weight: 400;
-    font-display: optional;
+    font-family: 'Roobert TRIAL';
     src: url('/fonts/RoobertTRIAL-Regular.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-      U+2215, U+FEFF, U+FFFD;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Roobert TRIAL';
+    src: url('/fonts/RoobertTRIAL-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Roobert TRIAL';
+    src: url('/fonts/RoobertTRIAL-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Reckless Neue TRIAL';
+    src: url('/fonts/RecklessNeueTRIAL-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Roobert TRIAL';
+    src: url('/fonts/RoobertTRIAL-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
   }
 
   .cursor-newtab {
@@ -68,32 +103,36 @@
 
   /* #region  /**=========== Typography =========== */
   .h0 {
-    @apply font-primary text-3xl font-bold md:text-5xl;
+    @apply text-3xl text-5xl font-bold md:font-primary;
   }
 
   h1,
   .h1 {
-    @apply font-primary text-2xl font-bold md:text-4xl;
+    @apply text-2xl text-4xl font-bold md:font-primary;
   }
 
   h2,
   .h2 {
-    @apply font-primary text-xl font-bold md:text-3xl;
+    @apply text-xl text-3xl font-bold md:font-primary;
   }
 
   h3,
   .h3 {
-    @apply font-primary text-lg font-bold md:text-2xl;
+    @apply text-lg text-2xl font-bold md:font-primary;
   }
 
   h4,
   .h4 {
-    @apply font-primary text-base font-bold md:text-lg;
+    @apply text-base text-lg font-bold md:font-primary;
   }
 
   body,
   .p {
-    @apply font-primary text-sm md:text-base;
+    @apply text-sm text-base md:font-primary;
+  }
+
+  .menu-style {
+    @apply flex items-center justify-between gap-6 text-lm font-medium;
   }
 
   /* #endregion  /**======== Typography =========== */
@@ -105,7 +144,7 @@
   }
 
   .bg-dark a.custom-link {
-    @apply border-gray-200 hover:border-gray-200/0;
+    @apply border-gray-200/0 hover:border-gray-200;
   }
 
   /* Class to adjust with sticky footer */
@@ -140,12 +179,18 @@
     background-size: 0 2px, 100% 2px;
   }
 }
+
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 img {
   border-radius: 1.5rem;
+}
+
+button {
+  font-size: 1rem;
 }

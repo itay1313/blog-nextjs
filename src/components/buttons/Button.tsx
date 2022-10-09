@@ -38,17 +38,17 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         type='button'
         disabled={disabled}
         className={clsxm(
-          'flex items-center rounded px-4 py-2 text-lm font-bold focus:outline-none focus-visible:ring focus-visible:ring-primary-500',
+          'flex items-center rounded-2xl border-2 border-primary-600 px-4 py-2  text-lm font-semibold focus:outline-none focus-visible:ring focus-visible:ring-primary-500',
           'shadow-sm',
           'transition-colors duration-75',
           //#region  //*=========== Variants ===========
           [
             variant === 'primary' && [
-              'ml-4 border border-primary-600 bg-primary-500 text-white hover:bg-primary-600 hover:text-white',
+              'ml-4 border-2 border-primary-600 bg-primary-500 text-white hover:bg-primary-600 hover:text-white',
             ],
             variant === 'outline' && [
               'text-primary-500',
-              'border border-primary-500',
+              'border-2 border-primary-500',
               'hover:bg-primary-50 active:bg-primary-100 disabled:bg-primary-100',
               isDarkBg &&
                 'hover:bg-gray-900 active:bg-gray-800 disabled:bg-gray-800',
@@ -61,10 +61,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 'hover:bg-gray-900 active:bg-gray-800 disabled:bg-gray-800',
             ],
             variant === 'light' && [
-              'bg-white text-dark ',
+              'bg-light text-dark ',
               'border border-gray-300',
               'hover:bg-gray-100 hover:text-dark',
-              'active:bg-white/80 disabled:bg-gray-200',
+              'active:bg-light/80 disabled:bg-gray-200',
             ],
             variant === 'dark' && [
               'bg-gray-900 text-white',

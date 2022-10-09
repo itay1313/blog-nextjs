@@ -88,8 +88,8 @@ export default function FormSection() {
             </div>
           </form>
         </div>
-        <div className='flex basis-1/3 flex-col'>
-          <FormImg />
+        <div className='flex basis-1/3 flex-col items-end'>
+          <FormImg width='173' height='167' />
         </div>
       </div>
     </section>

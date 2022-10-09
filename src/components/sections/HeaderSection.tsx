@@ -3,6 +3,7 @@ import * as React from 'react';
 import Button from '@/components/buttons/Button';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
+import ArrowIcon from '~/svg/ArrowIcon.svg';
 import HamburgerIcon from '~/svg/HamburgerIcon.svg';
 import Logo from '~/svg/Logo.svg';
 import SearchIcon from '~/svg/SearchIcon.svg';
@@ -26,27 +27,35 @@ const mainmenulinks = [
 
 export default function HeaderSection() {
   return (
-    <header className='bg-header-background py-20'>
+    <header className='bg-header-background pt-20 pb-24'>
       {/* top menu */}
-      <div className='top-menu-wrapper layout flex items-center justify-between rounded-3xl bg-white py-4 px-6'>
-        <div className='logo flex items-center'>
+      <div className='top-menu-wrapper layout flex items-center justify-between rounded-3xl bg-light py-4 px-4'>
+        <div className='logo flex items-center pl-2'>
           <a href='https://itaycode.com' target='_blank' rel='noreferrer'>
             <Logo width='103' height='32' />
           </a>
         </div>
         <div className='flex items-center'>
           <nav className='top-menu for-mobile:hidden'>
-            <ul className='flex items-center justify-between space-x-4 text-lm'>
+            <ul className='menu-style'>
               {topmenulinks.map(({ href, label }) => (
                 <li key={`${href}${label}`}>
-                  <UnstyledLink href={href} className='hover:text-gray-600'>
+                  <UnstyledLink
+                    className='flex items-center gap-1 hover:text-primary-500'
+                    href={href}
+                  >
                     {label}
+                    {label == 'Resources' || label == 'Company' ? (
+                      <ArrowIcon width='10' height='7' />
+                    ) : (
+                      ''
+                    )}
                   </UnstyledLink>
                 </li>
               ))}
             </ul>
           </nav>
-          <Button className='ml-4'>Sign up for free</Button>
+          <Button className='ml-7'>Sign up for free</Button>
         </div>
         <button className='menu md:hidden' title='Open Site Menu'>
           <HamburgerIcon />
@@ -54,16 +63,26 @@ export default function HeaderSection() {
       </div>
 
       {/* bottom menu */}
-      <div className='main-menu-wrapper layout mt-2 flex items-center justify-between pt-20'>
+      <div className='main-menu-wrapper layout mt-4 flex items-center justify-between pt-20'>
         <div className='logo'>
-          <h1 className='mt-4'>Blog</h1>
+          <h1 className='text-xxl font-semibold'>Blog</h1>
         </div>
-        <div className='mainmenu flex items-center rounded-2xl bg-white px-3 for-mobile:hidden'>
-          <nav className='flex items-center py-6 px-3'>
-            <ul className='flex items-center justify-between space-x-4'>
+        <div className='mainmenu flex items-center rounded-2xl bg-light py-[0.6rem] pr-3 for-mobile:hidden'>
+          <nav className='flex items-center px-3'>
+            <ul className='menu-style'>
               {mainmenulinks.map(({ href, label }) => (
-                <li key={`${href}${label}`}>
-                  <UnstyledLink href={href} className='hover:text-gray-600'>
+                <li
+                  key={`${href}${label}`}
+                  className={
+                    label == 'All'
+                      ? '-mr-2 rounded-lg bg-light-purple p-2 text-primary-500'
+                      : ''
+                  }
+                >
+                  <UnstyledLink
+                    href={href}
+                    className='flex items-center gap-1 hover:text-primary-500'
+                  >
                     {label}
                   </UnstyledLink>
                 </li>
@@ -73,17 +92,38 @@ export default function HeaderSection() {
           <div className='flex items-center'>
             <div className='relative my-auto flex items-center rounded-md shadow-sm'>
               <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
-                <SearchIcon />
+                <SearchIcon width='24' height='24' />
               </div>
               <input
+                width={192}
+                height={48}
                 type='text'
                 name='price'
                 id='price'
-                className='block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500'
-                placeholder='0.00'
+                className='block w-full rounded-md border-2 border-gray-300 border-transparent pl-7 pr-12 hover:border-2 hover:border-primary-500  focus:border-indigo-500 focus:ring-indigo-500'
+                style={{
+                  backgroundColor: 'hsla(33,27%,92%,.4)',
+                  borderRadius: '1rem',
+                  height: '3rem',
+                  width: '12rem',
+                }}
+                placeholder='Search'
               />
               <div className='absolute inset-y-0 right-0 flex items-center'>
-                <kbd className='k1a5kt68'>⌘K</kbd>
+                <kbd
+                  className='k1a5kt68 mr-3'
+                  style={{
+                    backgroundColor: '#f0ebe5',
+                    borderRadius: '0.4rem',
+                    color: '#aeadab',
+                    fontSize: '0.75rem',
+                    padding: '0.25rem 0.4375rem',
+                    fontWeight: 500,
+                    lineHeight: 1,
+                  }}
+                >
+                  ⌘K
+                </kbd>
               </div>
             </div>
           </div>

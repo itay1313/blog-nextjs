@@ -27,11 +27,11 @@ export default function HomePage() {
   }
   return (
     <Layout>
-      <div className={clsx(mode === 'dark' && 'dark')}>
+      <div className={clsx(mode === 'dark' && 'dark bg-light text-dark')}>
         <Seo templateTitle='Home' />
         <TopBar />
         <HeaderSection />
-        <main>
+        <main className='bg-light'>
           <HeroSection />
           <LatestPosts />
           <FormSection />
