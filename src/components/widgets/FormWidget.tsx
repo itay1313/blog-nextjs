@@ -48,7 +48,7 @@ const FormWidget = () => {
                 type='text'
                 name='email-address'
                 id='email-address'
-                className='input-style rounded-tl-2xl border-b-0'
+                className='input-style rounded-tl-2xl border-b-0 for-mobile:rounded-tr-2xl'
                 required
                 placeholder='Your email *'
               />
@@ -59,7 +59,7 @@ const FormWidget = () => {
                 type='text'
                 name='company'
                 id='company'
-                className='input-style rounded-tr-2xl border-l-0 border-b-0'
+                className='input-style rounded-tr-2xl border-l-0 border-b-0 for-mobile:rounded-tr-none for-mobile:border-l-2 for-mobile:border-b-2'
                 placeholder='Your company name'
               />
             </div>
@@ -68,7 +68,7 @@ const FormWidget = () => {
                 type='text'
                 name='first-name'
                 id='first-name'
-                className='input-style rounded-bl-2xl'
+                className='input-style rounded-bl-2xl for-mobile:rounded-bl-none for-mobile:border-y-0 for-mobile:border-l-2'
                 placeholder='First name'
               />
             </div>
@@ -78,18 +78,18 @@ const FormWidget = () => {
                 type='text'
                 name='last-name'
                 id='last-name'
-                className='input-style rounded-br-2xl border-l-0'
+                className='input-style rounded-br-2xl border-l-0 for-mobile:rounded-bl-2xl for-mobile:border-l-2'
                 placeholder='Last name'
               />
             </div>
           </div>
-          <div className='pt-4'>
+          <div className='pt-4 for-mobile:text-center'>
             <button type='submit' className='form-button'>
               Subscribe
             </button>
           </div>
           <div>
-            <p className='mt-[1.125rem] text-sm text-light'>
+            <p className='mt-[1.125rem] text-sm text-light for-mobile:text-center'>
               By filling out this form you agree to the terms and conditions in
               our{' '}
               <a

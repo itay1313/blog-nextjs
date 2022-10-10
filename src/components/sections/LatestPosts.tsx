@@ -9,7 +9,7 @@ export default function LatestPosts() {
     <section className=''>
       {/* top menu */}
       <div className='main-menu layout flex flex-col justify-between gap-10 pb-24'>
-        <h3>Latest Posts</h3>
+        <h3 className='for-mobile:hidden'>Latest Posts</h3>
         <ul className='grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
           {latestPostsData.map(({ href, postTitle, postSubtitle, imgSrc }) => (
             <li key={`${href}${postTitle}`} className='w-full flex-grow'>

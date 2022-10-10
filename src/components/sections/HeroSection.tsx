@@ -5,8 +5,8 @@ import NextImage from '@/components/NextImage';
 
 export default function HeroSection() {
   return (
-    <section className='hero py-24'>
-      <div className='layout flex justify-between'>
+    <section className='hero py-24 for-mobile:py-10'>
+      <div className='layout flex justify-between for-mobile:m-0 for-mobile:w-full for-mobile:flex-col-reverse for-mobile:gap-5 for-mobile:px-4'>
         <div className='flex basis-1/3 flex-col items-start md:pr-6'>
           <strong
             className='tag mb-2 flex rounded-xl bg-light-purple py-1 px-3 font-semibold text-dark-purple'
@@ -14,10 +14,10 @@ export default function HeroSection() {
           >
             FEATURED
           </strong>
-          <h3 className='mb-[0.625rem] text-[2rem] font-semibold leading-[1.15]'>
+          <h3 className='mb-[0.625rem] text-[2rem] font-semibold leading-[1.15] for-mobile:text-[1.375rem]'>
             Introducing Change Control
           </h3>
-          <p className=''>
+          <p className='text-lm'>
             <UnstyledLink href='/'>
               Today, we introduced Change Control. When enabled, it adds a test
               environment to your Story, allowing you to prototype and
