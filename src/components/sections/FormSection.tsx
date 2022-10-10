@@ -7,9 +7,9 @@ import FormImg from '~/svg/FormImg.svg';
 export default function FormSection() {
   return (
     <section className='form-wrapper'>
-      <div className='layout flex items-center justify-center rounded-3xl bg-purple p-16 shadow for-mobile:flex-col'>
+      <div className='layout flex items-center justify-center rounded-3xl bg-purple p-16 shadow for-mobile:flex-col-reverse for-mobile:p-7'>
         <div className='flex basis-2/3 flex-col'>
-          <h2 className='text-[2.625rem] font-bold leading-[1.1] text-light'>
+          <h2 className='text-[2.625rem] font-bold leading-[1.1] text-light for-mobile:mt-6 for-mobile:text-center for-mobile:text-[1.875rem]'>
             World class ideas
             <br></br>
             <em className='font-secondary font-normal not-italic'>
