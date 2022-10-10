@@ -130,7 +130,7 @@ export default function Footer() {
               ©Itaycode
             </a>
             <small className='flex items-center gap-3 text-lm  for-mobile:text-xs'>
-              <b className='font-normal'> | </b>
+              <b className='font-normal for-mobile:hidden'> | </b>
               <span>RSS:</span>
               <a
                 href='/rss/tines-blog.xml'

@@ -39,3 +39,6 @@ sitemap.xml
 sitemap-*.xml
 
 .cb
+.husky
+.github
+.vscode
