@@ -9,6 +9,7 @@ import {
 
 import UnstyledLink from '@/components/links/UnstyledLink';
 
+import BottomArrow from '~/svg/BottomArrow.svg';
 import CodepenIcon from '~/svg/CodepenIcon.svg';
 import LinkedinIcon from '~/svg/LinkedinIcon.svg';
 import Logow from '~/svg/Logow.svg';
@@ -17,13 +18,20 @@ import TwitterIcon from '~/svg/TwitterIcon.svg';
 export default function Footer() {
   return (
     <footer className='p-10 pt-0'>
-      <div className='rounded-3xl bg-footer-background px-20 pt-20 text-lm text-light'>
-        <section className='layout flex justify-between sm:flex-col md:flex-row'>
+      <div className='rounded-3xl bg-footer-background px-20 pt-20 text-lm text-light for-mobile:px-4 for-mobile:py-10'>
+        <section className='layout flex justify-between sm:flex-col md:flex-row for-mobile:flex-col for-mobile:gap-8'>
           <Logow width='122.3125' height='38' />
-          <div className='flex justify-between md:basis-9/12'>
+          <div className='flex justify-between md:basis-9/12 for-mobile:flex-col'>
             <div className='flex flex-col'>
-              <h3 className='footer-menu-title'>PRODUCT</h3>
-              <nav>
+              <div className='flex justify-between for-mobile:mb-6 for-mobile:items-center for-mobile:border-b-[1px] for-mobile:border-primary-900 for-mobile:pb-6'>
+                <h3 className='footer-menu-title'>PRODUCT</h3>
+                <BottomArrow
+                  width='10'
+                  height='7'
+                  className='hidden for-mobile:block'
+                />
+              </div>
+              <nav className='for-mobile:hidden'>
                 <ul className='flex flex-col items-start justify-between gap-2'>
                   {productLinks.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
@@ -39,8 +47,15 @@ export default function Footer() {
               </nav>
             </div>
             <div className='flex flex-col'>
-              <h3 className='footer-menu-title'>USE CASES</h3>
-              <nav>
+              <div className='flex justify-between for-mobile:mb-6 for-mobile:items-center for-mobile:border-b-[1px] for-mobile:border-primary-900 for-mobile:pb-6'>
+                <h3 className='footer-menu-title'>USE CASES</h3>
+                <BottomArrow
+                  width='10'
+                  height='7'
+                  className='hidden for-mobile:block'
+                />
+              </div>
+              <nav className='for-mobile:hidden'>
                 <ul className='flex flex-col items-start justify-between gap-2'>
                   {casesLinks.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
@@ -56,8 +71,15 @@ export default function Footer() {
               </nav>
             </div>
             <div className='flex flex-col'>
-              <h3 className='footer-menu-title'>RESOURCES</h3>
-              <nav>
+              <div className='flex justify-between for-mobile:mb-6 for-mobile:items-center for-mobile:border-b-[1px] for-mobile:border-primary-900 for-mobile:pb-6'>
+                <h3 className='footer-menu-title'>RESOURCES</h3>
+                <BottomArrow
+                  width='10'
+                  height='7'
+                  className='hidden for-mobile:block'
+                />
+              </div>
+              <nav className='for-mobile:hidden'>
                 <ul className='flex flex-col items-start justify-between gap-2'>
                   {resourcesLinks.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
@@ -73,8 +95,15 @@ export default function Footer() {
               </nav>
             </div>
             <div className='flex flex-col'>
-              <h3 className='footer-menu-title'>COMPANY</h3>
-              <nav>
+              <div className='flex justify-between for-mobile:mb-6 for-mobile:items-center for-mobile:border-b-[1px] for-mobile:border-primary-900 for-mobile:pb-6'>
+                <h3 className='footer-menu-title'>COMPANY</h3>
+                <BottomArrow
+                  width='10'
+                  height='7'
+                  className='hidden for-mobile:block'
+                />
+              </div>
+              <nav className='for-mobile:hidden'>
                 <ul className='flex flex-col items-start justify-between gap-2'>
                   {companyLinks.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
@@ -91,8 +120,8 @@ export default function Footer() {
             </div>
           </div>
         </section>
-        <section className='footer-copyrights layout mt-12 flex justify-between border-t border-light py-12 text-lm font-medium sm:flex-col md:flex-row'>
-          <div className='flex items-center gap-3'>
+        <section className='footer-copyrights layout flex justify-between border-light text-lm font-medium sm:flex-col md:mt-12 md:flex-row md:border-t md:py-12 for-mobile:flex-col'>
+          <div className='flex items-center gap-3 for-mobile:flex-col'>
             <a
               className='text-lm font-medium'
               title='Tines Homepage'
@@ -100,7 +129,7 @@ export default function Footer() {
             >
               ©Itaycode
             </a>
-            <small className='flex items-center gap-3 text-lm'>
+            <small className='flex items-center gap-3 text-lm  for-mobile:text-xs'>
               <b className='font-normal'> | </b>
               <span>RSS:</span>
               <a
@@ -131,7 +160,7 @@ export default function Footer() {
               </a>
             </small>
           </div>
-          <div className='flex gap-4'>
+          <div className='flex gap-4 for-mobile:mt-6 for-mobile:justify-center'>
             <TwitterIcon width='32' height='32' />
             <CodepenIcon width='32' height='32' />
             <LinkedinIcon width='32' height='32' />

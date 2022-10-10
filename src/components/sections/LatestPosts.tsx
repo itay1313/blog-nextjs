@@ -2,7 +2,7 @@ import React from 'react';
 
 import latestPostsData from '@/data/latestPosts.json';
 
-import NextImage from '@/components/NextImage';
+import { BlogPost } from '@/components/widgets/BlogPost';
 
 export default function LatestPosts() {
   return (
@@ -12,19 +12,13 @@ export default function LatestPosts() {
         <h3 className='for-mobile:hidden'>Latest Posts</h3>
         <ul className='grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
           {latestPostsData.map(({ href, postTitle, postSubtitle, imgSrc }) => (
-            <li key={`${href}${postTitle}`} className='w-full flex-grow'>
-              <a href={href} className='hover:bg-primary-500'>
-                <NextImage
-                  useSkeleton
-                  className='w-full rounded-xl md:w-full'
-                  src={imgSrc}
-                  width='744'
-                  height='390'
-                  alt='Icon'
-                />
-                <h3 className='post-title'>{postTitle}</h3>
-                <p> {postSubtitle}</p>
-              </a>
+            <li key={`${href}${postTitle}`} className='flex w-full flex-grow'>
+              <BlogPost
+                href={href}
+                postTitle={postTitle}
+                postSubtitle={postSubtitle}
+                imgSrc={imgSrc}
+              />
             </li>
           ))}
         </ul>

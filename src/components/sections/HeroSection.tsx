@@ -17,7 +17,7 @@ export default function HeroSection() {
           <h3 className='mb-[0.625rem] text-[2rem] font-semibold leading-[1.15] for-mobile:text-[1.375rem]'>
             Introducing Change Control
           </h3>
-          <p className='text-lm'>
+          <p className='for-mobile:text-lm'>
             <UnstyledLink href='/'>
               Today, we introduced Change Control. When enabled, it adds a test
               environment to your Story, allowing you to prototype and

@@ -19,7 +19,7 @@ export const BlogPost = ({
   postSubtitle,
 }: BlogPostProps) => {
   return (
-    <a href={href} className='post'>
+    <a href={href} className='post relative'>
       <NextImage
         useSkeleton
         className='w-full rounded-xl md:w-full'
