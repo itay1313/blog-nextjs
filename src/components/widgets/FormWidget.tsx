@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 
+import SuccessIcon from '~/svg/SuccessIcon.svg';
+
 // FormWidget component
 
 const FormWidget = () => {
@@ -10,13 +12,24 @@ const FormWidget = () => {
   const formVisible = !confirmationScreenVisible;
 
   const ConfirmationMessage = (
-    <div>
-      <p>
-        Thank you for submitting this form. Someone should get back to you
-        within 24-48 hours.
-      </p>
+    <div
+      className='flex gap-2'
+      style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+    >
+      <SuccessIcon />
+      <p>You are all set! Thank you for subscribing to the Itays Newsletter.</p>
     </div>
   );
+
+  // const ErrorMessage = (
+  //   <div
+  //     className='flex gap-2'
+  //     style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+  //   >
+  //     <SuccessIcon />
+  //     <p>Please enter a valid email address.</p>
+  //   </div>
+  // );
 
   const ContactForm = (
     <form
