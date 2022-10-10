@@ -1,15 +1,10 @@
-import clsx from 'clsx';
 import * as React from 'react';
 
-import Button from '@/components/buttons/Button';
-import Footer from '@/components/layout/Footer';
 import Layout from '@/components/layout/Layout';
 import BlogSection from '@/components/sections/BlogSection';
 import FormSection from '@/components/sections/FormSection';
-import HeaderSection from '@/components/sections/HeaderSection';
 import HeroSection from '@/components/sections/HeroSection';
 import LatestPosts from '@/components/sections/LatestPosts';
-import TopBar from '@/components/sections/TopBar';
 import Seo from '@/components/Seo';
 
 /**
@@ -21,30 +16,16 @@ import Seo from '@/components/Seo';
  */
 
 export default function HomePage() {
-  const [mode, setMode] = React.useState<'dark' | 'light'>('light');
-  function toggleMode() {
-    return mode === 'dark' ? setMode('light') : setMode('dark');
-  }
   return (
     <Layout>
-      <div className={clsx(mode === 'dark' && 'dark bg-light text-dark')}>
+      <div>
         <Seo templateTitle='Home' />
-        <TopBar />
-        <HeaderSection />
-        <main className='bg-light'>
+        <main>
           <HeroSection />
           <LatestPosts />
           <FormSection />
           <BlogSection />
         </main>
-        <Footer />
-        <Button
-          className='fixed bottom-10 right-10'
-          onClick={toggleMode}
-          variant={mode === 'dark' ? 'light' : 'dark'}
-        >
-          Set to {mode === 'dark' ? 'light' : 'dark'}
-        </Button>
       </div>
     </Layout>
   );
