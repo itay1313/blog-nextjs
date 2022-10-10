@@ -1,18 +1,32 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 
-// type BlogPostProps = {
-//   isLoading?: boolean;
-//   isDarkBg?: boolean;
-//   href?: string;
-//   postTitle?: string;
-//   postSubtitle?: string;
-//   imgSrc?: string | undefined;
-// } & React.ComponentPropsWithRef<'div'>;
-
 // FormWidget component
-export const FormWidget = () => {
-  return (
-    <form action='#' method='POST'>
+
+const FormWidget = () => {
+  const router = useRouter();
+  const confirmationScreenVisible =
+    router.query?.success && router.query.success === 'true';
+  const formVisible = !confirmationScreenVisible;
+
+  const ConfirmationMessage = (
+    <div>
+      <p>
+        Thank you for submitting this form. Someone should get back to you
+        within 24-48 hours.
+      </p>
+    </div>
+  );
+
+  const ContactForm = (
+    <form
+      className='container'
+      method='POST'
+      name='contact-form'
+      action='contact/?success=true'
+      data-netlify='true'
+      data-netlify-honeypot='bot-field'
+    >
       <div>
         <div className='py-5'>
           <div className='grid grid-cols-6'>
@@ -57,15 +71,30 @@ export const FormWidget = () => {
             </div>
           </div>
           <div className='pt-4'>
-            <button
-              type='submit'
-              className='inline-flex min-h-[3.375rem] items-center border border-transparent bg-white py-2 px-4 text-base font-semibold text-dark-purple hover:opacity-[0.9] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
-            >
+            <button type='submit' className='form-button'>
               Subscribe
             </button>
+          </div>
+          <div>
+            <p className='mt-[1.125rem] text-sm text-light'>
+              By filling out this form you agree to the terms and conditions in
+              our{' '}
+              <a
+                href='/privacy'
+                target='_blank'
+                className='font-bold underline'
+              >
+                Privacy&nbsp;Notice
+              </a>{' '}
+              <sup>↗</sup>.
+            </p>
           </div>
         </div>
       </div>
     </form>
   );
+
+  return <>{formVisible ? ContactForm : ConfirmationMessage}</>;
 };
+
+export default FormWidget;

@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['Roobert TRIAL', ...fontFamily.sans],
+        secondary: ['Reckless Neue TRIAL', ...fontFamily.sans],
       },
       fontWeight: {
         hairline: 100,

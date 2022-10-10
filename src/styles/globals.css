@@ -149,6 +149,9 @@
     @apply block h-14 w-full border-0 border-2 border-primary-400 bg-transparent py-1 text-base text-light shadow-none placeholder:text-primary-300 focus:border-0 focus:border-primary-700 focus:shadow-none focus:ring-white;
   }
 
+  .form-button {
+    @apply min-h-[3.375rem] w-[11.25rem] items-center justify-center rounded-2xl border border-transparent bg-white py-2 px-4 text-base font-semibold text-dark-purple opacity-[0.9] hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+  }
   /* #endregion  /**======== Typography =========== */
 
   .layout {
