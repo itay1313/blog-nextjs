@@ -13,7 +13,7 @@ export default function LatestPosts() {
         <ul className='grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
           {latestPostsData.map(({ href, postTitle, postSubtitle, imgSrc }) => (
             <li key={`${href}${postTitle}`} className='w-full flex-grow'>
-              <a href={href} className='hover:text-primary-500'>
+              <a href={href} className='hover:bg-primary-500'>
                 <NextImage
                   useSkeleton
                   className='w-full rounded-xl md:w-full'

@@ -40,7 +40,7 @@ export default function HeaderSection() {
             </a>
           </div>
           <div className='flex items-center'>
-            <nav className='top-menu hidden lg:visible'>
+            <nav className='top-menu hidden lg:block'>
               <ul className='menu-style'>
                 {topmenulinks.map(({ href, label }) => (
                   <li key={`${href}${label}`}>

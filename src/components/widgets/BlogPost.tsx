@@ -19,7 +19,7 @@ export const BlogPost = ({
   postSubtitle,
 }: BlogPostProps) => {
   return (
-    <a href={href} className='hover:text-primary-500'>
+    <a href={href} className='post'>
       <NextImage
         useSkeleton
         className='w-full rounded-xl md:w-full'
