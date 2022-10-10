@@ -24,7 +24,7 @@ const FormWidget = () => {
 
   const ErrorMessage = (
     <div
-      className='flex gap-2'
+      className='mt-4 flex items-center gap-2 rounded-xl p-4 text-center text-base text-light'
       style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
     >
       <SuccessIcon />
