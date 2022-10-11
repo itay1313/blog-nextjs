@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { mainmenulinks, topmenulinks } from '@/data/headerLinksData';
+
 import Button from '@/components/buttons/Button';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import TopBar from '@/components/sections/TopBar';
@@ -8,23 +10,6 @@ import ArrowIcon from '~/svg/ArrowIcon.svg';
 import HamburgerIcon from '~/svg/HamburgerIcon.svg';
 import Logo from '~/svg/Logo.svg';
 import SearchIcon from '~/svg/SearchIcon.svg';
-
-const topmenulinks = [
-  { href: '/', label: 'Product' },
-  { href: '/', label: 'Use cases' },
-  { href: '/', label: 'Resources' },
-  { href: '/', label: 'Company' },
-  { href: '/', label: 'Pricing' },
-];
-
-const mainmenulinks = [
-  { href: '/', label: 'All' },
-  { href: '/', label: 'News' },
-  { href: '/', label: 'Product updates' },
-  { href: '/', label: 'Tutorials' },
-  { href: '/', label: 'Inside Tines' },
-  { href: '/', label: 'Engineering' },
-];
 
 export default function HeaderSection() {
   return (
