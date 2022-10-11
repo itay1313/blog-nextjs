@@ -17,7 +17,7 @@ import TwitterIcon from '~/svg/TwitterIcon.svg';
 
 export default function Footer() {
   return (
-    <footer className='p-10 pt-0'>
+    <footer className='p-10 pt-0 for-mobile:p-[1.125rem]'>
       <div className='rounded-3xl bg-footer-background px-20 pt-20 text-lm text-light for-mobile:px-4 for-mobile:py-10'>
         <section className='layout flex justify-between sm:flex-col md:flex-row for-mobile:flex-col for-mobile:gap-8'>
           <Logow width='122.3125' height='38' />
