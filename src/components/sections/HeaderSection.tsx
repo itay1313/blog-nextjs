@@ -16,9 +16,9 @@ export default function HeaderSection() {
     <>
       {' '}
       <TopBar />
-      <header className='bg-header-background pt-6 pb-10 md:pt-20 md:pb-24'>
+      <header className='bg-header-background pt-6 pb-10 md:pt-20 md:pb-24 for-mobile:px-[1.125rem]'>
         {/* top menu */}
-        <div className='top-menu-wrapper layout flex items-center justify-between rounded-3xl bg-light py-4 px-[1.125rem] for-mobile:p-2'>
+        <div className='top-menu-wrapper layout flex items-center justify-between rounded-3xl bg-light py-4 px-[1.125rem] for-mobile:m-0 for-mobile:w-full for-mobile:px-2 for-mobile:py-3'>
           <div className='logo flex items-center pl-2'>
             <a href='https://itaycode.com' target='_blank' rel='noreferrer'>
               <Logo width='103' height='32' />
@@ -54,7 +54,7 @@ export default function HeaderSection() {
         </div>
 
         {/* bottom menu */}
-        <div className='main-menu-wrapper layout flex w-full flex-col justify-between px-4 md:mt-4 md:pt-20 lg:flex-row xl:px-0 for-mobile:mx-0 for-mobile:items-center for-mobile:pt-10'>
+        <div className='main-menu-wrapper layout flex w-full flex-col justify-between md:mt-4 md:px-4 md:pt-20 lg:flex-row xl:px-0 for-mobile:mx-0 for-mobile:items-center for-mobile:pt-10'>
           <div className='logo'>
             <h1 className='text-xxl font-semibold md:mb-8 xl:mb-0 for-mobile:mb-9 for-mobile:text-[2.5rem]'>
               Blog
