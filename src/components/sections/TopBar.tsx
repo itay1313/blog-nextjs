@@ -7,7 +7,7 @@ import CloseIcon from '~/svg/CloseIcon.svg';
 export default function TopBar() {
   const [show, setShow] = useState(true);
   return (
-    <section className='alert-bar sticky top-0 z-50 bg-top-bar text-light'>
+    <section className='alert-bar sticky top-0 z-50 bg-top-bar text-light for-mobile:p-4'>
       {show && (
         <div className='relative flex flex-wrap items-center justify-center space-x-5 py-4 text-sm'>
           <p>Blog: Extending our Series B - Itay raises additional $55m</p>
