@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-// !STARTERCONF Change these default meta
 const defaultMeta = {
   title: 'Itay Haephrati - UX Engineer',
   siteName: 'My cool blog',
@@ -100,7 +99,6 @@ type Favicons = {
   type?: string;
 };
 
-// !STARTERCONF this is the default favicon, you can generate your own from https://www.favicon-generator.org/ then replace the whole /public/favicon folder
 const favicons: Array<Favicons> = [
   {
     rel: 'apple-touch-icon',
