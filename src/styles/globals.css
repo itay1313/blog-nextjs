@@ -44,6 +44,7 @@
   --dark: #32313b;
   --light: #fff;
   --light-gray: hsla(0, 0%, 100%, 0.1);
+  --hover-bg: rgba(133, 120, 230, 0.05);
   /* #endregion  /**======== Primary Color =========== */
 }
 
@@ -58,6 +59,7 @@
   --dark: #fff;
   --light: #32313b;
   --light-gray: rgba(9, 9, 9, 0.1);
+  --hover-bg: rgba(194, 190, 225, 0.05);
 }
 
 @layer base {

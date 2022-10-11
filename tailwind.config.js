@@ -75,6 +75,7 @@ module.exports = {
         'footer-background': 'var(--footer-background)',
         'footer-title': 'var(--footer-title)',
         'light-gray': 'var(--light-gray)',
+        'hover-bg': 'var(--hover-bg)',
       },
       spacing: {
         7: '1.75rem',

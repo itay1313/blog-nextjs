@@ -67,7 +67,7 @@ export default function HeaderSection() {
                 {mainmenulinks.map(({ href, label }) => (
                   <li
                     key={`${href}${label}`}
-                    className={`mx-1 rounded-lg p-2 leading-[1.15] hover:bg-primary-100 ${
+                    className={`mx-1 rounded-lg p-2 leading-[1.15] hover:bg-hover-bg ${
                       label == 'All'
                         ? 'rounded-lg bg-light-purple p-2 text-primary-500 hover:bg-light'
                         : ''
