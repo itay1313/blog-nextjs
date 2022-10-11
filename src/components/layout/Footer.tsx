@@ -120,7 +120,10 @@ export default function Footer() {
             </div>
           </div>
         </section>
-        <section className='footer-copyrights layout flex justify-between border-light text-lm font-medium sm:flex-col md:mt-12 md:flex-row md:border-t md:py-12 for-mobile:flex-col'>
+        <section
+          className='footer-copyrights layout flex justify-between text-lm font-medium sm:flex-col md:mt-12 md:flex-row md:border-t md:py-12 for-mobile:flex-col'
+          style={{ borderTop: '2px solid var(--light-gray)' }}
+        >
           <div className='flex items-center gap-3 for-mobile:flex-col'>
             <a
               className='text-lm font-medium'

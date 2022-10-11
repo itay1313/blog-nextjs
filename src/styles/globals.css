@@ -43,6 +43,7 @@
   --footer-title: #b0a6f9;
   --dark: #32313b;
   --light: #fff;
+  --light-gray: hsla(0, 0%, 100%, 0.1);
   /* #endregion  /**======== Primary Color =========== */
 }
 
@@ -56,6 +57,7 @@
   --footer-title: var(--color-primary-900);
   --dark: #fff;
   --light: #32313b;
+  --light-gray: rgba(9, 9, 9, 0.1);
 }
 
 @layer base {
