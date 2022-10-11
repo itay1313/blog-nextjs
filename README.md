@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🔋 Itay's nextjs-tailwind-starter</h1>
+  <h1>🔋 Itay's nextjs-tailwind blog</h1>
   <p>Next.js + Tailwind CSS + TypeScript</p>
   <p>Made by <a href="https://itaycode.com">Itay Haephrati</a></p>
   
