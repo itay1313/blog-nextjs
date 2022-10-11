@@ -1,3 +1,4 @@
+//#Latest post section  //*===========  ===========
 import React from 'react';
 
 import latestPostsData from '@/data/latestPosts.json';
@@ -26,3 +27,5 @@ export default function LatestPosts() {
     </section>
   );
 }
+
+//#endregion  //*========  ===========

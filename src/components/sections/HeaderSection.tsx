@@ -1,3 +1,4 @@
+//#header  //*===========  ===========
 import * as React from 'react';
 
 import { mainmenulinks, topmenulinks } from '@/data/headerLinksData';
@@ -129,3 +130,5 @@ export default function HeaderSection() {
     </>
   );
 }
+
+//#endregion  //*========  ===========

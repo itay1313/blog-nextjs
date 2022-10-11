@@ -1,3 +1,4 @@
+//#Layout with dark mode toggle  //*===========  ===========
 import clsx from 'clsx';
 import * as React from 'react';
 
@@ -24,3 +25,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
+
+//#endregion  //*========  ===========

@@ -1,3 +1,4 @@
+//#button  //*===========  ===========
 import * as React from 'react';
 import { ImSpinner2 } from 'react-icons/im';
 
@@ -101,3 +102,5 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 export default Button;
+
+//#endbutton  //*========  ===========

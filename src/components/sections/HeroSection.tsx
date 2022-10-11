@@ -1,3 +1,4 @@
+//#hero  //*===========  ===========
 import React from 'react';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
@@ -39,3 +40,5 @@ export default function HeroSection() {
     </section>
   );
 }
+
+//#endregion  //*========  ===========

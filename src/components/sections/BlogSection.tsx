@@ -1,3 +1,4 @@
+//#Blog section  //*===========  ===========
 import React from 'react';
 
 import jsonPostData from '@/data/postData.json';
@@ -28,3 +29,5 @@ export default function BlogSection() {
     </section>
   );
 }
+
+//#endregion  //*========  ===========

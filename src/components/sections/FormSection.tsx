@@ -1,10 +1,11 @@
+//#form section  //*===========  ===========
 import React from 'react';
 
 import FormWidget from '@/components/widgets/FormWidget';
 
 import FormImg from '~/svg/FormImg.svg';
 
-export default function FormSection() {
+export function FormSection() {
   return (
     <section className='form-wrapper'>
       <div className='layout flex items-center justify-center rounded-3xl bg-purple p-16 shadow for-mobile:flex-col-reverse for-mobile:p-7 for-mobile:pb-2'>
@@ -16,6 +17,7 @@ export default function FormSection() {
               right in your inbox
             </em>
           </h2>
+
           <FormWidget />
         </div>
         <div className='flex basis-1/3 flex-col items-end'>
@@ -25,3 +27,5 @@ export default function FormSection() {
     </section>
   );
 }
+
+//#form section  //*========  ===========

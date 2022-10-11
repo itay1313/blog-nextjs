@@ -1,3 +1,4 @@
+//#top bar  //*===========  ===========
 import React, { useState } from 'react';
 
 import UnderlineLink from '@/components/links/UnderlineLink';
@@ -23,3 +24,5 @@ export default function TopBar() {
     </section>
   );
 }
+
+//#endregion  //*========  ===========
