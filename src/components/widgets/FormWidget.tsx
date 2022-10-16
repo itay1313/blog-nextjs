@@ -12,6 +12,7 @@ type Inputs = {
 const FormWidget = () => {
   const [formSubmit, setFormSubmit] = useState(false);
 
+  // Success message
   const ConfirmationMessage = (
     <div
       className='mt-4 flex items-center gap-2 rounded-xl p-4 text-center text-base text-light'
@@ -22,6 +23,7 @@ const FormWidget = () => {
     </div>
   );
 
+  // Error message
   const ErrorMessage = (
     <div
       className='mt-4 flex items-center gap-2 rounded-xl p-4 text-center text-base text-light'

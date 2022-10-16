@@ -132,7 +132,7 @@ export default function Footer() {
             </a>
             <small className='flex items-center gap-3 text-lm  for-mobile:text-xs'>
               <b className='font-normal for-mobile:hidden'> | </b>
-              <span>RSS:</span>
+              <span className='for-mobile:hidden'>RSS:</span>
               <a
                 href='/rss/tines-blog.xml'
                 title='Tines Blog RSS feed'
