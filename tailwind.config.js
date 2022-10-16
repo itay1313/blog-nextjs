@@ -33,6 +33,9 @@ module.exports = {
         xxl: ['52px', '58px'],
       },
       screens: {
+        tp: { max: '380px' },
+        // => @media (max-width: 380px) { ... }
+
         'for-mobile': { max: '767px' },
         // => @media (max-width: 767px) { ... }
 

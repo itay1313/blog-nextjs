@@ -20,9 +20,9 @@ export default function Footer() {
   return (
     <footer className='p-10 pt-0 for-mobile:mb-14 for-mobile:p-[1.125rem]'>
       <div className='rounded-3xl bg-footer-background px-20 pt-20 text-lm text-light for-mobile:px-4 for-mobile:py-10'>
-        <section className='layout flex justify-between sm:flex-col md:flex-row for-mobile:flex-col for-mobile:gap-8'>
+        <section className='layout flex justify-between sm:flex-col lg:flex-row for-mobile:flex-col for-mobile:gap-8'>
           <Logow width='122.3125' height='38' />
-          <div className='flex justify-between md:basis-9/12 for-mobile:flex-col'>
+          <div className='mt-4 flex justify-between md:basis-9/12 lg:mt-0 for-mobile:flex-col'>
             <div className='flex flex-col'>
               <div className='flex justify-between for-mobile:mb-6 for-mobile:items-center for-mobile:border-b-[1px] for-mobile:border-primary-900 for-mobile:pb-6'>
                 <h3 className='footer-menu-title'>PRODUCT</h3>
@@ -132,7 +132,7 @@ export default function Footer() {
             </a>
             <small className='flex items-center gap-3 text-lm  for-mobile:text-xs'>
               <b className='font-normal for-mobile:hidden'> | </b>
-              <span className='for-mobile:hidden'>RSS:</span>
+              <span className='tp:hidden'>RSS:</span>
               <a
                 href='/rss/tines-blog.xml'
                 title='Tines Blog RSS feed'
