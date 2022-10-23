@@ -105,7 +105,7 @@ export default function HeaderSection() {
                       />
                       <div className='absolute inset-y-0 right-0 flex items-center'>
                         <kbd
-                          className='k1a5kt68 mr-2 font-primary'
+                          className='mr-2 font-primary'
                           style={{
                             backgroundColor: '#f0ebe5',
                             borderRadius: '0.4rem',
